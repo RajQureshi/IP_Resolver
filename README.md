@@ -10,7 +10,7 @@ This Bash script allows you to resolve IP addresses from target names. You can p
 **Installation**
 ```
 1. git clone https://github.com/RajQureshi/IP_Resolver.git
-2. cd ipresover
+2. cd IP_Resolver
 4. ./ipresover.sh
 ```
 **Usage**
