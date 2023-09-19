@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# Custom banner
-banner_width=49  # Adjust this value as needed to center the text
+
+banner_width=49  
 banner_text="By Raj Qureshi"
 echo  "_ ___     ____ ____ ____ ____ _    _  _ ____ ____ "
 echo  "| |__]    |__/ |___ [__  |  | |    |  | |___ |__/ "
 echo  "| |       |  \ |___ ___] |__| |___  \/  |___ |  \ "
 printf "%${padding}s%s%${padding}s\n\n" "$banner_text" " "
 
-# Function to resolve IPv4 address from a target name
+
 resolve_ipv4() {
     local target="$1"
     local ipv4_address
@@ -18,7 +18,7 @@ resolve_ipv4() {
     fi
 }
 
-# Function to print help message
+
 print_help() {
     echo "Usage: $0 [-l <list_file> | -u <target_name>] [-o <output_file>] [-h]"
     echo "Options:"
@@ -29,12 +29,12 @@ print_help() {
     exit 0
 }
 
-# Default values
+
 input_file=""
 target_name=""
 output_file="/dev/stdout"
 
-# Parse command line arguments
+
 while [ $# -gt 0 ]; do
     case "$1" in
         -l|--list)
@@ -62,10 +62,10 @@ while [ $# -gt 0 ]; do
     esac
 done
 
-# Output headers for "URLs" and "IPs" columns
+
 echo "URLs IPs" > "$output_file"
 
-# Process the targets based on the input method
+
 if [ -n "$input_file" ]; then
     while read -r target; do
         result=$(resolve_ipv4 "$target")
