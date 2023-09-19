@@ -8,9 +8,9 @@ A Bash script for resolving IP addresses from target names.
 This Bash script allows you to resolve IP addresses from target names. You can provide a list of target names in a file or specify a single target name as an argument. The script will then resolve the IP addresses and output the results to a file or stdout.
 
 ## Installation
-git clone https://github.com/RajQureshi/IP_Resolver.git
-cd ipresover
-./ipresover.sh
+1. git clone https://github.com/RajQureshi/IP_Resolver.git
+2. cd ipresover/n
+3. ./ipresover.sh
    
 ## Usage
 To resolve the IP address of a single target name:
